@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Cosmic Comic Store</title>
+</head>
+<body>
+    <h1>Comics</h1>
+    <a href="/comic"><button>Back to Main Page</button></a>
+    <main>
+                <a href ="/comic/<%= comic._id &>"><img scr="<%= comic.img &>"/></a>
+                <h2><%= comic.inventory %></h2>
+                <button>Comic Inventory</button>
+            <article id=formcontainer>
+                <form id="form" action ="/comic/<%= comic._id %>?_method=PUT" method="post">
+                <input type="text" placeholder="place img url here" value="<%= comic.img &>"name="img/"/>
+                <input type="submit" value="update comic"/>
+            
+            </form>
+            </article>
+    </main>
+</body>
+</html>
