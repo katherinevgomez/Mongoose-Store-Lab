@@ -10,4 +10,4 @@
 -to kill a port
 sudo kill -9 $(sudo lsof -t -i:3000)
 
-npx degit katherinevgomez/myexpressboilerplate#master todolists
+npx degit katherinevgomez/Mongoose-Store-Lab#master Mongoose-Store-Lab
